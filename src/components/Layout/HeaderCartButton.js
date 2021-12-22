@@ -31,7 +31,7 @@ const HeaderCartButton = (props) => {
         return () => {
             clearTimeout(timer);
         };
-    }, [items, items.length]);
+    }, [items, cartCtx.items.length]);
 
     return <button className={btnClasses} onClick={props.onClick}>
         <span className={classes.icon}>
